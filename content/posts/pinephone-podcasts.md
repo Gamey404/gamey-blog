@@ -1,6 +1,6 @@
 +++
 author = "Gamey"
-title = "Podcasts on the Pinephone."
+title = "Podcasts on the Pinephone"
 date = "2021-08-12"
 description = "A review of allk current Podcast clients for the Pinephone."
 tags = [
@@ -122,4 +122,3 @@ Pinecast is another minimal and WIP podcast client written in c++. The UI is a b
 **Extra Links:**
 - Reddit thread: https://libredd.it/r/pinephone/comments/oz3dby/podcasts_on_the_pinephone/
 - Pine64 forum: thread: https://forum.pine64.org/showthread.php?tid=14594
-- Previouse Post: https://open.lbry.com/@gamey:c/5-best-pinephone-apps-2:9?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW

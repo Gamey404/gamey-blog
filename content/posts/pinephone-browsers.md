@@ -1,10 +1,10 @@
 +++
 author = "Gamey"
-title = "Browsers on the Pinephone."
+title = "Browsers on the Pinephone"
 date = "2021-04-25"
 description = "A list of most current Browsers for the Pinephone."
 tags = [
-    "Pinephone", "ArchLinux", "Browsers",
+"Pinephone", "Linux Phone", "Browsers",
 ]
 
 +++

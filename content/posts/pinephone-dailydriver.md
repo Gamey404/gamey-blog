@@ -1,10 +1,10 @@
 +++
 author = "Gamey"
-title = "My Pinephone Dailydriver setup."
+title = "My Pinephone Dailydriver setup (Outdated)"
 date = "2021-04-12"
 description = "A list of most current Browsers for the Pinephone."
 tags = [
-    "Pinephone", "ArchLinux", "Dailydriver",
+"Pinephone", "Linux Phone",
 ]
 
 +++

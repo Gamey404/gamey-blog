@@ -4,7 +4,7 @@ title = "PINEPHONE: 5 amazing Linux phone apps! Part 3"
 date = "2021-09-05"
 description = "List of awesome Pinephone apps"
 tags = [
-    "Pinephone", "ArchLinux", "5 Apps",
+"Pinephone", "5 Apps Pinephone", "Linux Phone",
 ]
 
 +++
@@ -93,3 +93,5 @@ This is a absolute must have for every GNU/Linux device no matter the form facto
 | PostmarketOS | gnome-disk-utility |
 
 **Previouse Post:**
+https://gamey.tech/posts/pinephone-5-amazing-linux-phone-apps-part-2/
+https://gamey.tech/posts/pinephone-5-amazing-linux-phone-apps/

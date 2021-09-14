@@ -4,7 +4,7 @@ title = "PINEPHONE: 5 amazing Linux phone apps! Part 2"
 date = "2021-08-05"
 description = "List of awesome Pinephone apps."
 tags = [
-    "Pinephone", "5 Apps",
+"Pinephone", "5 Apps Pinephone", "Linux Phone",
 ]
 
 +++
@@ -89,5 +89,4 @@ Shattered-Pixel-Dungeon is a amazing Rougelike RPG made with Java/LibGDX. I orig
 | Working .jar | https://github.com/moxvallix/LinMobGames |
 
 **Previouse Post:**
-lbry://@gamey#c/5-best-pinephone-apps#3
-https://open.lbry.com/@gamey:c/5-best-pinephone-apps:3
+https://gamey.tech/posts/pinephone-5-amazing-linux-phone-apps/

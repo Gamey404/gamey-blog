@@ -1,10 +1,10 @@
 +++
 author = "Gamey"
-title = "PINEPHONE: 5 amazing Linux phone apps!"
+title = "PINEPHONE: 5 amazing Linux phone Apps!"
 date = "2021-04-05"
 description = "5 amazing Linux phone apps!"
 tags = [
-    "Pinephone",  "5 Apps",
+"Pinephone", "5 Apps Pinephone", "Linux Phone",
 ]
 
 +++

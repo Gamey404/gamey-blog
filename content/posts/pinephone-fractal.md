@@ -1,10 +1,10 @@
 +++
 author = "Gamey"
-title = "Fractal on the Pinephone."
+title = "Fractal on the Pinephone"
 date = "2021-01-23"
 description = "A short guide to using the matrix client Fractal with encryption on the Pinephone."
 tags = [
-    "Pinephone", "ArchLinux", "fractal",
+"Pinephone", "Linux Phone", "fractal",
 ]
 
 +++
@@ -47,7 +47,3 @@ Here are a few screenshots of Fractal and Seahorse.
 | ![](https://gateway.pinata.cloud/ipfs/QmXKD8BAG5r2CAxtSWYs37L6UwpypoL77iiZCzxFKzK7Pt/20201017_04h05m22s_grim.png) | ![](https://gateway.pinata.cloud/ipfs/QmXKD8BAG5r2CAxtSWYs37L6UwpypoL77iiZCzxFKzK7Pt/20201218_12h50m36s_grim.png) | ![](https://gateway.pinata.cloud/ipfs/QmXKD8BAG5r2CAxtSWYs37L6UwpypoL77iiZCzxFKzK7Pt/20201017_04h09m00s_grim.png) | ![](https://gateway.pinata.cloud/ipfs/QmXKD8BAG5r2CAxtSWYs37L6UwpypoL77iiZCzxFKzK7Pt/20201017_04h05m22s_grim.png) |
 |-------|-------|-------|---|
 | ![](https://gateway.pinata.cloud/ipfs/QmTZukJAcsvxGJKDGJdppjm6fQMcrVCasaX2Xh8vusUqLN/20210123_15h51m23s_grim.png) | ![](https://gateway.pinata.cloud/ipfs/QmTZukJAcsvxGJKDGJdppjm6fQMcrVCasaX2Xh8vusUqLN/20210123_15h51m39s_grim.png) | ![](https://gateway.pinata.cloud/ipfs/QmTZukJAcsvxGJKDGJdppjm6fQMcrVCasaX2Xh8vusUqLN/20210123_15h52m47s_grim.png) | ![](https://gateway.pinata.cloud/ipfs/QmTZukJAcsvxGJKDGJdppjm6fQMcrVCasaX2Xh8vusUqLN/20210123_15h53m15s_grim.png) |
-
-
-### Thanks to:
-- @jason123santa:matrix.org for telling me about Seahorse!
