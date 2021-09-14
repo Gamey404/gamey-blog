@@ -50,9 +50,9 @@ It can be a bit more complicated then just installing the App if you want a good
 |-------|-------|-------|-------|
 | ![](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/brcDb1HVBWMA/pvrdnQ7e5PprSFIjM7KF19CrOqYQ4c6DaNGGSGcs.png) | ![](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/g6mz47Pq9rvl/ua5xUKHTiTydvZrHGjHKri0kWBO92TYx2YiTwrM7.png) | ![](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/CqCgNzD0EVHO/Yv63rBFExka2D1ILF6EffPoxiEJA9WErns8XWzxg.png) | ![](https://pixelfed.social/storage/m/_v2/245825453661753344/1672d1d81-1ab3fb/8a33KJo0gPCk/8Gq5VC6DJcy72jx3aZAACkZr6NHT8iQAvDfyEDN2.png) |
 
-5 Awesome Pinephone apps: https://open.lbry.com/@gamey:c/best-pinephone-apps-3:2?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW
+5 Awesome Pinephone apps: https://gamey.tech/posts/pinephone-5-amazing-linux-phone-apps-part-3/
 
-Podcasts on the Pinephone: https://open.lbry.com/@gamey:c/podcasts-on-the-pinephone:8?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW
+Podcasts on the Pinephone: https://gamey.tech/posts/podcasts-on-the-pinephone./
 <br></br>
 
 - Mastodon: https://fosstodon.org/web/accounts/267032
