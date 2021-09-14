@@ -1,0 +1,340 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>PINEPHONE: 5 amazing Linux phone apps! Part 2 | Gamey</title>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="List of awesome Pinephone apps.">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=ROBOTS content="NOINDEX, NOFOLLOW">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+</head>
+<body>
+<nav class=navigation>
+<a href=/> <span class=arrow>←</span>Home</a>
+<a href=/posts>Archive</a>
+<a href=/tags>Tags</a>
+<a href=/about>About</a>
+<a class=button href=https://gamey.tech/index.xml>Subscribe</a>
+</nav>
+<main class=main>
+<section id=single>
+<h1 class=title>PINEPHONE: 5 amazing Linux phone apps! Part 2</h1>
+<div class=tip>
+<time datetime="2021-08-05 00:00:00 +0000 UTC">Aug 5, 2021</time>
+<span class=split>
+·
+</span>
+<span>
+614 words
+</span>
+<span class=split>
+·
+</span>
+<span>
+3 minute read
+</span>
+</div>
+<aside class=toc>
+<details>
+<summary>Table of Contents
+</summary>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#tubefeeder>Tubefeeder:</a></li>
+<li><a href=#kweather>KWeather:</a></li>
+<li><a href=#wake-mobile>Wake Mobile:</a></li>
+<li><a href=#fragments>Fragments:</a></li>
+<li><a href=#shattered-pixel-dungeon>Shattered-pixel-Dungeon:</a></li>
+</ul>
+</nav>
+</div>
+</details>
+</aside>
+<div class=content>
+<p>Today I want to highlight five more of the in my opinion best Pinephone apps in a little more detail. I think I will make a series out of this because I like to do it and apparently people like to read it. As always all of my testing is done on my 2GB Pinephone with DanctNIX Arch Linux.</p>
+<h2 id=tubefeeder>Tubefeeder: <a href=#tubefeeder class=anchor>🔗</a></h2><p>Tubefeeder is something in between a feed reader and Youtube client made with GTK and written in Rust. It allows you to follow Youtube channels and builds a convenient feed out of them, it then plays the videos using youtube-dl and MPV to improve performance and allow for somewhat fluid 720p video playback even on the Pinephone. Additionally it has a &ldquo;watch later&rdquo; list, a easy way to follow channels with just the name and some filters I don&rsquo;t really understand.</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/MojrbLPF7jSA/dSiWHNb3CUyLOym1lVrbI2LSq8SoJZUN0clFRJHf.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/WNas9Z7NEe4f/LU8v2yzmQHg1SzcBMnArXhITRR8olU3f5vqVPnx0.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/0kTiEU1okFaB/Ky0EUk3C5Xe6LsI9EUMdraOy6tHgSkY1zRz3pd6m.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/aZL7bgskGtwt/xnFA7Y0inzHR7KdJcmByA5AFJhu0rRt5RtUeyAiH.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://github.com/Schmiddiii/Tubefeeder target=_blank rel=noopener>https://github.com/Schmiddiii/Tubefeeder</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td></td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/de.schmidhuberj.tubefeeder target=_blank rel=noopener>https://flathub.org/apps/details/de.schmidhuberj.tubefeeder</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id=kweather>KWeather: <a href=#kweather class=anchor>🔗</a></h2><p>KWeather is a weather app made with QT/Kirigami and written in C++ and QML. It&rsquo;s fairly simple but covers everything you need like a simple forecast, the option to add multiple locations and the ability to switch Temperature and wind speed units. There are also two themes but only the &ldquo;flat&rdquo; theme runs decently well on the Pinephone (in terms of performance) so that&rsquo;s the one you should probably use!</p>
+<p><strong>Note:</strong> Kirigami apps require a &ldquo;mobile mode&rdquo; which Phosh doesn&rsquo;t seem to implement and many Distros (including Arch) don&rsquo;t yet ether so I used <code>QT_QUICK_CONTROLS_MOBILE=1 kweather</code> but my daily driver PostmarketOS doesn&rsquo;t need it so I didn&rsquo;t bother to get rid of the top bar or find a better solution.</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/eV2egPKhxXyA/CiDVeZEhPoByDkUm27f8p3be1CLKiCmwn254VUjo.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/4qY7mn72ui81/4h64sGOUIejeivsa0HEwHarA8CkmKFSCOMAWVKDr.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/gtiqaaW9RX97/uqNsVhI4aVhpEVPdj2S5PgqEJAc40krTtJF3qtsb.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/63QcHzTAlwvX/LthfrMNq1KjTEbmr5pWi4o1zVDQSgtnHZhoX3Zvz.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://invent.kde.org/plasma-mobile/kweather target=_blank rel=noopener>https://invent.kde.org/plasma-mobile/kweather</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>kweather-git</td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/org.kde.kweather target=_blank rel=noopener>https://flathub.org/apps/details/org.kde.kweather</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td>kweather</td>
+</tr>
+</tbody>
+</table>
+<h2 id=wake-mobile>Wake Mobile: <a href=#wake-mobile class=anchor>🔗</a></h2><p>Wake mobile is a proof of concept alarm clock for the Pinephone made with GTK and written in Python and C. It utilize SystemD to wake up the device from deepsleep which makes it useless on my PmOS daily driver setup but work on most other distros. I used this app multiple times to wake me up and it worked reliably so while it&rsquo;s a proof of concept it&rsquo;s a must have for anyone who wants to use the Pinephone as alarm clock!</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/QRnJdSrQG6FT/V1jFY1NySd10SIyF9am9DAM6lo7UjpNuneIGMYpD.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/j5MyZm2sj7ct/69VBztkTiXtMRUtBblsqKlJoHSDeRwKD48MJ1qqr.png alt>
+</p></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://gitlab.gnome.org/kailueke/wake-mobile target=_blank rel=noopener>https://gitlab.gnome.org/kailueke/wake-mobile</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td></td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id=fragments>Fragments: <a href=#fragments class=anchor>🔗</a></h2><p>Fragments is a simple Bittorrent client made with GTK and written in Vala. I wouldn&rsquo;t use it on my computer because it lacks a lot of features I like to have as somewhat frequent Torrent user but it&rsquo;s really nice on the Pinephone. I admit that on a device with 16GB storage I don&rsquo;t use torrents that frequently and haven&rsquo;t used Fragments much yet but it&rsquo;s really handy to have!</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/vWJwYNy5AaBF/LwiRWeUuPoHO5DjlAWpvThrWzU0tcTDDPgGMssI8.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/vQIALEVi6Jpc/lwcvCgzYIPzVwW18HkKfq6jWjwjNdYzMQC8970Ad.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/ofN7x2fxqNKb/SjIQoENnSUTIxP91A9QLGrydiu5kYbAEfhJmvcPO.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/f98697a52-a34568/xcVQqprAycGc/xLgf5zJ3gvGsSDSsqgGm5MBSFDmdqvgiErrfGB07.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://gitlab.gnome.org/World/Fragments target=_blank rel=noopener>https://gitlab.gnome.org/World/Fragments</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>fragments-git</td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/de.haeckerfelix.Fragments target=_blank rel=noopener>https://flathub.org/apps/details/de.haeckerfelix.Fragments</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id=shattered-pixel-dungeon>Shattered-pixel-Dungeon: <a href=#shattered-pixel-dungeon class=anchor>🔗</a></h2><p>Shattered-Pixel-Dungeon is a amazing Rougelike RPG made with Java/LibGDX. I originally played this game on a Android phone years ago and it quickly became my favorite mobile game of all time but what I only realized years (when I got my Pinephone) is that it&rsquo;s cross platform and works on the Pinephone. There only was one issue, it had some sort of dependency issues so the .jar files didn&rsquo;t work and while there was a working <code>.deb</code> that for obviouse reasons limited it to Mobian till <a href=https://github.com/moxvallix target=_blank rel=noopener>Moxvallix</a> who currently runs the LinMob Games list and repo (A extra list to <a href=https://linmobapps.frama.io/ target=_blank rel=noopener>LinMobApps</a> that houses games) added a working <code>.jar</code> to the repo. If you want a fun little game to play from time to time on your Pinephone you just have to try this one because it&rsquo;s simple but also simply awesome! :D</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/xTrWBGHEieky/2W59QUYkglImsN25LsZ062RsQnygdeDrKp8sngRo.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/Jb7JW5o6lh3w/GC2qyzPKDtYl94cZiILiTu7cOnKS5Bf0nSwJUmLS.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/OA3DIn1JZKfr/ddTAzssMEG4lz0Bq0AHVAlTIleSQgIj8NFlXWbn4.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/f98697a52-a34568/ZZeFTIONnwap/5lNKp1HBo35qFx481cKhNFkeNMTcgV6h5YH7oDOQ.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://github.com/moxvallix/LinMobGames target=_blank rel=noopener>https://github.com/moxvallix/LinMobGames</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td></td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Working .jar</td>
+<td><a href=https://github.com/moxvallix/LinMobGames target=_blank rel=noopener>https://github.com/moxvallix/LinMobGames</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Previouse Post:</strong>
+lbry://@gamey#c/5-best-pinephone-apps#3
+<a href=https://open.lbry.com/@gamey:c/5-best-pinephone-apps:3 target=_blank rel=noopener>https://open.lbry.com/@gamey:c/5-best-pinephone-apps:3</a></p>
+</div>
+<div class=tags>
+<a href=https://gamey.tech/tags/pinephone>Pinephone</a>
+<a href=https://gamey.tech/tags/5-apps>5 Apps</a>
+</div>
+</section>
+</main>
+<footer id=footer>
+<div id=social>
+<a class=symbol href=https://fosstodon.org/@gamey rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-mastodon" viewBox="0 0 16 16"><path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339.0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027.0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614.0 01-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804.0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727.0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856.0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74.0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/></svg>
+</a>
+<a class=symbol href=https://twitter.com/gamey404 rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038.0 9.341-5.003 9.341-9.334.0-.14.0-.282-.006-.422A6.685 6.685.0 0016 3.542a6.658 6.658.0 01-1.889.518 3.301 3.301.0 001.447-1.817 6.533 6.533.0 01-2.087.793A3.286 3.286.0 007.875 6.03 9.325 9.325.0 011.108 2.601a3.289 3.289.0 001.018 4.382A3.323 3.323.0 01.64 6.575v.045a3.288 3.288.0 002.632 3.218 3.203 3.203.0 01-.865.115 3.23 3.23.0 01-.614-.057 3.283 3.283.0 003.067 2.277A6.588 6.588.0 01.78 13.58 6.32 6.32.0 010 13.535 9.344 9.344.0 005.026 15z"/></svg>
+</a>
+</div>
+<div class=copyright>
+Blog by gamey ❤️
+</div>
+</footer>
+</body>
+</html>

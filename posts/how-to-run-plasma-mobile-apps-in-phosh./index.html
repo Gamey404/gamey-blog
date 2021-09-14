@@ -1,0 +1,141 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>How to run Plasma mobile apps in Phosh. | Gamey</title>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="A short guide on how to properly use Kirigami apps in Phosh.">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=ROBOTS content="NOINDEX, NOFOLLOW">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+</head>
+<body>
+<nav class=navigation>
+<a href=/> <span class=arrow>←</span>Home</a>
+<a href=/posts>Archive</a>
+<a href=/tags>Tags</a>
+<a href=/about>About</a>
+<a class=button href=https://gamey.tech/index.xml>Subscribe</a>
+</nav>
+<main class=main>
+<section id=single>
+<h1 class=title>How to run Plasma mobile apps in Phosh.</h1>
+<div class=tip>
+<time datetime="2021-09-13 00:00:00 +0000 UTC">Sep 13, 2021</time>
+<span class=split>
+·
+</span>
+<span>
+644 words
+</span>
+<span class=split>
+·
+</span>
+<span>
+4 minute read
+</span>
+</div>
+<aside class=toc>
+<details>
+<summary>Table of Contents
+</summary>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#install-dependencies>Install dependencies:</a></li>
+<li><a href=#set-environment-variables>Set Environment variables:</a></li>
+<li><a href=#conclusion>Conclusion:</a></li>
+</ul>
+</nav>
+</div>
+</details>
+</aside>
+<div class=content>
+<p>Today I will touch on a topic that I had issues with for a long time till I somewhat figured it out or I at least hope I did. It&rsquo;s not at all hard to do but you have to know what to do and since I found no proper guide or anything about this except for a environment variable <a href=https://github.com/1peter10/linuxphone-tweaks/blob/main/etc/environment target=_blank rel=noopener>list</a> by Peter from linmob I thought I would make my own. I want to clarify that I am not a expert and my experience with Plasma apps is fairly limited but I got the few things that I struggled with together and wrote a quick post that will hopefully help some of you out there! As always all of my testing is done on my 2GB Pinephone running DanctNIX Archlinux mobile and these are things I also did on my PostmarketOS install.</p>
+<h2 id=install-dependencies>Install dependencies: <a href=#install-dependencies class=anchor>🔗</a></h2><p>First of all you have to make sure to install the required QT packages which you can for the most part do using the meta package <code>plasma-framework</code>.</p>
+<p>Now you also have to ensure that there is a valid qt theme and icon pack installed since these are interchangeable and therefor not in the dependency lists. For that you ether install your preferred theme or for the defaults <code>breeze</code> and <code>breeze-icons</code>.</p>
+<p>There are also certain runtime dependencies which are preinstalled in Plasma mobile and not required to build the app but totally required to run it in Phosh. These are very easy to miss for package maintainers so no matter the distro you are on you will probably run into a few of those. Ones that I found missing from a few packages are <code>qt5-svg</code> and <code>qt5-wayland</code> but there are a few more specially QML and Kirigami related ones so if you find any please just comment them down below!</p>
+<p>If you plan to build a Kirigami app in Phosh you probably want to just install the following dependencies: <code>knotifications kdbusaddons kservice kcmutils purpose breeze breeze-icons plasma-framework cmake</code>. <em>There are obviously many more dependencies you may need but these should be a decent start</em></p>
+<h2 id=set-environment-variables>Set Environment variables: <a href=#set-environment-variables class=anchor>🔗</a></h2><p>Most Phosh distros miss a few environment variables that Kirigami apps need to run well on smartphones which you will have to set in <code>/etc</code> for a optimal experience.</p>
+<ul>
+<li>First of is <code>QT_QPA_PLATFORM=wayland</code> which ensures that the app uses Wayland and not XWayland which has a quite big performance impact and when using Wayland you probably also want to ensure it&rsquo;s window decorations are disabled or you will see a ugly frame around your app <code>QT_WAYLAND_DISABLE_WINDOWDECORATION=1</code>.</li>
+<li>With that out of the way you have to make sure the theming is right to make them look roughly how they would in Plasma mobile and for that you need <code>QT_QPA_SYSTEM_ICON_THEME=breeze</code> which ensures the app uses Plasmas Breeze theme, <code>QT_QUICK_CONTROLS_MOBILE=1</code> which sets QTQuick to a mobile mode without which the scaling and position of certain elements isn&rsquo;t correct and <code>QT_QUICK_CONTROLS_STYLE=org.kde.breeze</code> which also ensures you use the Breeze theme.</li>
+<li>Last up Kirigami has a low performance mode to reduce lags on devices like the Pinephone which you can set with <code>KIRIGAMI_LOWPOWER_HARDWARE=1</code></li>
+</ul>
+<p>To actually set these you just have to edit <code>/etc/environment</code> with a text editor like nano or Gedit and add all of them which should look like this when you are done:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#
+# This file is parsed by pam_env module
+#
+# Syntax: simple &#34;KEY=VAL&#34; pairs on separate lines
+#
+
+QT_QPA_PLATFORM=wayland
+QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+QT_QPA_SYSTEM_ICON_THEME=breeze
+QT_QUICK_CONTROLS_MOBILE=1
+QT_QUICK_CONTROLS_STYLE=org.kde.breeze
+KIRIGAMI_LOWPOWER_HARDWARE=1
+</code></pre></div><h2 id=conclusion>Conclusion: <a href=#conclusion class=anchor>🔗</a></h2><p>It can be a bit more complicated then just installing the App if you want a good experience but it&rsquo;s no witchcraft and there are some awesome QT apps so the effort definitely pays off! To end this I want to show a few screenshots of the amazing Kirigami app Kasts running in Phosh:</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/FhAVXgMky16N/D01gBVbHCxxnbzKKNNA6ydymdOjaeaUVQna71oTu.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/7qyi9aZ3srDj/1qoe5mkMXLUet1lynMoBlxdBMzIpHUc64BrN99q0.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/RGs10KIacwDp/hIJXRtA2e7vtLadqZqYVX0m8ZMGyPFroNHUj8aCn.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/VgolPETugqIC/xfn8rYtTXT1G7zogC6UONIzpQUv8TZ7hKr9SWq16.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/brcDb1HVBWMA/pvrdnQ7e5PprSFIjM7KF19CrOqYQ4c6DaNGGSGcs.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/g6mz47Pq9rvl/ua5xUKHTiTydvZrHGjHKri0kWBO92TYx2YiTwrM7.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/245825453661753344/1672d1d81-1ab3fb/CqCgNzD0EVHO/Yv63rBFExka2D1ILF6EffPoxiEJA9WErns8XWzxg.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://pixelfed.social/storage/m/_v2/245825453661753344/1672d1d81-1ab3fb/8a33KJo0gPCk/8Gq5VC6DJcy72jx3aZAACkZr6NHT8iQAvDfyEDN2.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<p>5 Awesome Pinephone apps: <a href="https://open.lbry.com/@gamey:c/best-pinephone-apps-3:2?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW" target=_blank rel=noopener>https://open.lbry.com/@gamey:c/best-pinephone-apps-3:2?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW</a></p>
+<p>Podcasts on the Pinephone: <a href="https://open.lbry.com/@gamey:c/podcasts-on-the-pinephone:8?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW" target=_blank rel=noopener>https://open.lbry.com/@gamey:c/podcasts-on-the-pinephone:8?r=D23fWA6ePDwmZpXPfaLBzkDVj5qWRWYW</a>
+</p>
+<ul>
+<li>Mastodon: <a href=https://fosstodon.org/web/accounts/267032 target=_blank rel=noopener>https://fosstodon.org/web/accounts/267032</a></li>
+<li>Twitter: <a href=https://twitter.com/gamey404 target=_blank rel=noopener>https://twitter.com/gamey404</a></li>
+</ul>
+</div>
+<div class=tags>
+<a href=https://gamey.tech/tags/pinephone>Pinephone</a>
+<a href=https://gamey.tech/tags/archlinux>ArchLinux</a>
+<a href=https://gamey.tech/tags/kirigami-in-phosh>Kirigami in Phosh</a>
+</div>
+</section>
+</main>
+<footer id=footer>
+<div id=social>
+<a class=symbol href=https://fosstodon.org/@gamey rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-mastodon" viewBox="0 0 16 16"><path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339.0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027.0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614.0 01-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804.0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727.0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856.0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74.0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/></svg>
+</a>
+<a class=symbol href=https://twitter.com/gamey404 rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038.0 9.341-5.003 9.341-9.334.0-.14.0-.282-.006-.422A6.685 6.685.0 0016 3.542a6.658 6.658.0 01-1.889.518 3.301 3.301.0 001.447-1.817 6.533 6.533.0 01-2.087.793A3.286 3.286.0 007.875 6.03 9.325 9.325.0 011.108 2.601a3.289 3.289.0 001.018 4.382A3.323 3.323.0 01.64 6.575v.045a3.288 3.288.0 002.632 3.218 3.203 3.203.0 01-.865.115 3.23 3.23.0 01-.614-.057 3.283 3.283.0 003.067 2.277A6.588 6.588.0 01.78 13.58 6.32 6.32.0 010 13.535 9.344 9.344.0 005.026 15z"/></svg>
+</a>
+</div>
+<div class=copyright>
+Blog by gamey ❤️
+</div>
+</footer>
+</body>
+</html>

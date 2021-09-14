@@ -1,0 +1,178 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>Browsers on the Pinephone. | Gamey</title>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="A list of most current Browsers for the Pinephone.">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=ROBOTS content="NOINDEX, NOFOLLOW">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+</head>
+<body>
+<nav class=navigation>
+<a href=/> <span class=arrow>←</span>Home</a>
+<a href=/posts>Archive</a>
+<a href=/tags>Tags</a>
+<a href=/about>About</a>
+<a class=button href=https://gamey.tech/index.xml>Subscribe</a>
+</nav>
+<main class=main>
+<section id=single>
+<h1 class=title>Browsers on the Pinephone.</h1>
+<div class=tip>
+<time datetime="2021-04-25 00:00:00 +0000 UTC">Apr 25, 2021</time>
+<span class=split>
+·
+</span>
+<span>
+1320 words
+</span>
+<span class=split>
+·
+</span>
+<span>
+7 minute read
+</span>
+</div>
+<aside class=toc>
+<details>
+<summary>Table of Contents
+</summary>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#firefox>Firefox:</a></li>
+<li><a href=#angelfish>Angelfish:</a></li>
+<li><a href=#chromiumungoogled-chromium>Chromium/Ungoogled Chromium:</a></li>
+<li><a href=#castor>Castor:</a></li>
+<li><a href=#qutebrowser>Qutebrowser:</a></li>
+<li><a href=#others>Others:</a></li>
+<li><a href=#sources>Sources:</a></li>
+</ul>
+</nav>
+</div>
+</details>
+</aside>
+<div class=content>
+<p>Today I thought I would do a full rewrite of my Pinephone browsers post because it&rsquo;s obviously a important peace on every phone specially with a limited app selection. I hope this is helpful to some of you and as always all my testing is done on my 2GB Pinephone with DanctNIX Arch Linux.</p>
+<h2 id=firefox>Firefox: <a href=#firefox class=anchor>🔗</a></h2><p>The browser I use by far the most and one that worked decent since I got my device. The UI isn&rsquo;t perfect since it&rsquo;s essentially the desktop one with a few tricks applied via the mobile config package but it&rsquo;s definitely usable. Firefox is decently fast, scales well enough to be usable and generally is still the browser that works best for me. Some issues are that Addons can&rsquo;t scale so while I can and do use UBlock I can&rsquo;t use it&rsquo;s UI, the removal of SSB/PWA features broke my Matrix setup over the minimal web UI Hydrogen, videos work but I can&rsquo;t get back out of fullscreen when I toggled it on once and some settings don&rsquo;t work because of scaling issues (mostly the ones that open a small window). If you use a Pinephone FF is most likely your default browser and it deserves that in my opinion but ultimately a mobile UI would be really cool to have.</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmXmq8N1otd7EWJDhZH5gStUVazLFM8t4aADLqd1qa1kJw/20210422_09h56m38s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmXmq8N1otd7EWJDhZH5gStUVazLFM8t4aADLqd1qa1kJw/20210422_09h57m03s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmXmq8N1otd7EWJDhZH5gStUVazLFM8t4aADLqd1qa1kJw/20210422_09h57m29s_grim.png alt>
+</p></th>
+</tr>
+</thead>
+</table>
+<h2 id=angelfish>Angelfish: <a href=#angelfish class=anchor>🔗</a></h2><p>The default Plasma mobile browser and only &ldquo;mobile first&rdquo; browser for the Pinephone. It uses Plasmas awesome mobile UI frameworks as a base (Qt based), runs on QtWebEngine (a fork of Googles Blink) and implements Braves Rust adblocker which I consider to be one of the best out there. I have really high hopes for the future of Angelfish but currently it still crashes from time to time, like FF can&rsquo;t go out of fullscreen, lacks a lot of features I would really like to have, has some issues to scale bigger and smaller when the keyboard is in use (probably framework related since it&rsquo;s a issue on all Plasma mobile apps when running them in Phosh), no addon support yet, doesn&rsquo;t support PWAs (progressive web apps) in Phosh yet and can&rsquo;t trigger Squeekboard (the Phosh keyboard). I currently use it as second browser next to FF and view it as a great option but it still has a long way to go.
+<strong>Extra:</strong> You can delete cookies in Angelfish with the following commands:
+<code>rm ~/.local/share/KDE/angelfish/QtWebEngine/DefaultProfile/Cookies</code>
+<code>rm ~/.local/share/KDE/angelfish/QtWebEngine/DefaultProfile/Cookies-journal</code></p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmQDBxW69mBELsmPnf1sexiDDL9PHM4qAmbHwC46yo49Nh/20210421_23h04m13s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmQDBxW69mBELsmPnf1sexiDDL9PHM4qAmbHwC46yo49Nh/20210421_23h04m30s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmQDBxW69mBELsmPnf1sexiDDL9PHM4qAmbHwC46yo49Nh/20210421_23h05m01s_grim.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmQDBxW69mBELsmPnf1sexiDDL9PHM4qAmbHwC46yo49Nh/20210421_23h05m16s_grim.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmQDBxW69mBELsmPnf1sexiDDL9PHM4qAmbHwC46yo49Nh/20210421_23h05m36s_grim.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id=chromiumungoogled-chromium>Chromium/Ungoogled Chromium: <a href=#chromiumungoogled-chromium class=anchor>🔗</a></h2><p>Yea ik it&rsquo;s Googles browser and many of us (including me) refuse to use it at least as main browser but as the only browser I know of that can get out of fullscreen when watching videos I currently use it for exactly that. Negatives about it include a UI that scales a bit worse then the FF one, No well working Wayland support so it currently uses XWayland to translate all calls which has a impact on performance and to balance that out the Pinephone renders it at reduced resolution, there is a keyboard glitch that blocks your from typing a &ldquo;@&rdquo; (you can just copy paste), I haven&rsquo;t spend much time exploring but I wasn&rsquo;t able to get Addons installed, it uses the Blink rendering engine which is the fastest and most feature rich but forms a total monopoly on most platforms and the hamburger menu can be really tricky to navigate. Over all I will try to avoid this browser as much as possible but currently have a good usecase for it on my Pinephone.
+<strong>Extra:</strong> If you want to try Ozone (Wayland compatible Chromium) yourself you can do so using the following flags. <code>--enable-features=UseOzoneProject --ozone-platform=wayland</code></p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmST4vd1GZk4XKRV8Cs7cFF5WBfAdpzseNBQe9R56VKwds/20210421_23h06m53s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmST4vd1GZk4XKRV8Cs7cFF5WBfAdpzseNBQe9R56VKwds/20210421_23h07m07s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmST4vd1GZk4XKRV8Cs7cFF5WBfAdpzseNBQe9R56VKwds/20210421_23h07m34s_grim.png alt>
+</p></th>
+</tr>
+</thead>
+</table>
+<h2 id=castor>Castor: <a href=#castor class=anchor>🔗</a></h2><p>Not actually a &ldquo;webbrowser&rdquo; because instead of the world wide web it&rsquo;s build on Gemini a alternative, minimal and text only protocol and as far as I understand a attempt to modernise Gopher (a competitor of www in the early days of the internet). I really like CSS, images and even light weight scripts so this isn&rsquo;t really something I will use but it&rsquo;s a really interesting project and I love that we have a browser for it that works on the Pinephone. Obviously Gemini has no way to build mobile friendly websites and there generally aren&rsquo;t many Gemini/Gopher websites out there but it&rsquo;s a fun project and you should at least try it out once if you are a true FOSS nerd :D</p>
+<p>(Pinata which I usually use to upload images apparently removed folders so I have to search a alternative before adding screenshots here.)</p>
+<h2 id=qutebrowser>Qutebrowser: <a href=#qutebrowser class=anchor>🔗</a></h2><p>I had to include this QtWebEngine/QtWebKit based browser because it&rsquo;s terminal driven vim like UI and input method makes it the only feature rich option in which all features beside of website scaling just work (shouldn&rsquo;t be more then changing the user agent string tho). It can be a bit annoying to use on a mobile device but works really well even with the default keybindings (requires the terminal Keyboard layout).</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmWicYQTNbqL8SSm1mjKXG6eDGUeA7YTN3NwfmX4BeXT4F/20210422_10h15m26s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmWicYQTNbqL8SSm1mjKXG6eDGUeA7YTN3NwfmX4BeXT4F/20210422_10h16m09s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmWicYQTNbqL8SSm1mjKXG6eDGUeA7YTN3NwfmX4BeXT4F/20210422_10h16m28s_grim.png alt>
+</p></th>
+</tr>
+</thead>
+</table>
+<h2 id=others>Others: <a href=#others class=anchor>🔗</a></h2><p>Here I list all the browsers I can&rsquo;t feature in full length because it would make very little sense to me and just extend the post to a ridiculous length. Also most of them are desktop only browsers some with awful UI for mobile devices but I still wanted to feature them here just because they work.</p>
+<ul>
+<li><strong>LibreWolf:</strong> My favorite desktop browser and essentially just Firefox from a different source and with far better default settings. It works but there is no mobile config for it like for Firefox which makes it kind of useless on the Pinephone.</li>
+<li><strong>Dillo:</strong> A extremely light weight browser that lacks many features the modern web includes. I honestly can&rsquo;t see much of a use case for this no matter what platform but I guess it&rsquo;s for a different audiance.</li>
+<li><strong>Liri Browser:</strong> Part of the Liri app collection which uses Googles Material design over the UI toolkit Fluid and based on Chromium. I am not a big fan of Material design but many are so these apps are a really cool idea and I wish them luck. Once again a case of not that great scaling and just in general nothing for me.</li>
+<li><strong>Epiphany/Gnome Web:</strong> The default Gnome browser based on GTK and WebKitGTK and one of the only cases of actually great scaling via Libhandy (a library to help GTK to scale). If there wasn&rsquo;t the problem of HW acceleration issues with WebKit (GPU based acceleration doesn&rsquo;t work) Epiphany would probably be the best mobile GNU/Linux browser. In short it&rsquo;s currently so slow and laggy I would highly recommend to just stay away (not even worth a try in my optinion)</li>
+<li><strong>Midori:</strong> A GTK and WebKitGTK based &ldquo;minimal&rdquo; browser which scales somewhat okay but again using WebKit. It has some more small bugs and issues but it&rsquo;s generally usable if you disable JS or just wait a very long time for each site to load.</li>
+<li><strong>Vivaldi:</strong> I have no idea why someone from this &ldquo;community&rdquo; would even touch a closed source browser when we have so many open source versions but it works. Like Chromium it also uses x11 so XWayland only and the UI is just awful for mobile devices. I have to note that I haven&rsquo;t done basically any testing and uninstalled it again right away.</li>
+<li><strong>Falkon:</strong> The Plasma desktop browser and based on QT and QtWebEngine. I am so not a fan of this browser and it doesn&rsquo;t scale specially well ether. Additionally it won&rsquo;t ever scale because the Plasma mobile team decided to instead make Angelfish (a great choice in my opinion) but still another working browser.</li>
+<li><strong>QtWebBrowser</strong> A touch optimized browser from the QT team for some kind of tablet like devices. It works but the UI components are far to big which forces you to turn the screen for every search.</li>
+</ul>
+<h2 id=sources>Sources: <a href=#sources class=anchor>🔗</a></h2><p>First of all a huge thanks to the people who helped me find info on Mastodon and with that out of the way here are the sources.
+<a href="https://forum.pine64.org/showthread.php?tid=13669" target=_blank rel=noopener>https://forum.pine64.org/showthread.php?tid=13669</a>
+<a href=https://linmobapps.frama.io target=_blank rel=noopener>https://linmobapps.frama.io</a>
+<a href=https://fosstodon.org/@gamey/106104815889084213 target=_blank rel=noopener>https://fosstodon.org/@gamey/106104815889084213</a></p>
+</div>
+<div class=tags>
+<a href=https://gamey.tech/tags/pinephone>Pinephone</a>
+<a href=https://gamey.tech/tags/archlinux>ArchLinux</a>
+<a href=https://gamey.tech/tags/browsers>Browsers</a>
+</div>
+</section>
+</main>
+<footer id=footer>
+<div id=social>
+<a class=symbol href=https://fosstodon.org/@gamey rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-mastodon" viewBox="0 0 16 16"><path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339.0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027.0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614.0 01-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804.0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727.0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856.0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74.0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/></svg>
+</a>
+<a class=symbol href=https://twitter.com/gamey404 rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038.0 9.341-5.003 9.341-9.334.0-.14.0-.282-.006-.422A6.685 6.685.0 0016 3.542a6.658 6.658.0 01-1.889.518 3.301 3.301.0 001.447-1.817 6.533 6.533.0 01-2.087.793A3.286 3.286.0 007.875 6.03 9.325 9.325.0 011.108 2.601a3.289 3.289.0 001.018 4.382A3.323 3.323.0 01.64 6.575v.045a3.288 3.288.0 002.632 3.218 3.203 3.203.0 01-.865.115 3.23 3.23.0 01-.614-.057 3.283 3.283.0 003.067 2.277A6.588 6.588.0 01.78 13.58 6.32 6.32.0 010 13.535 9.344 9.344.0 005.026 15z"/></svg>
+</a>
+</div>
+<div class=copyright>
+Blog by gamey ❤️
+</div>
+</footer>
+</body>
+</html>

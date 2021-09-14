@@ -1,0 +1,144 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>My Pinephone Dailydriver setup. | Gamey</title>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="A list of most current Browsers for the Pinephone.">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=ROBOTS content="NOINDEX, NOFOLLOW">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+</head>
+<body>
+<nav class=navigation>
+<a href=/> <span class=arrow>←</span>Home</a>
+<a href=/posts>Archive</a>
+<a href=/tags>Tags</a>
+<a href=/about>About</a>
+<a class=button href=https://gamey.tech/index.xml>Subscribe</a>
+</nav>
+<main class=main>
+<section id=single>
+<h1 class=title>My Pinephone Dailydriver setup.</h1>
+<div class=tip>
+<time datetime="2021-04-12 00:00:00 +0000 UTC">Apr 12, 2021</time>
+<span class=split>
+·
+</span>
+<span>
+2168 words
+</span>
+<span class=split>
+·
+</span>
+<span>
+11 minute read
+</span>
+</div>
+<aside class=toc>
+<details>
+<summary>Table of Contents
+</summary>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#installation>Installation:</a></li>
+<li><a href=#apps-i-use>Apps I use:</a></li>
+<li><a href=#cool-apps>Cool Apps:</a></li>
+<li><a href=#general-usability>General usability:</a></li>
+</ul>
+</nav>
+</div>
+</details>
+</aside>
+<div class=content>
+<p>Today I will talk a little about my personal Pinephone setup which I use as daily driver by now. Unlike on my testing setup where I just love DanctNIX Arch ARM in this case I chose PostmarketOS. The reason for that is it&rsquo;s minimalist approach which fits perfect for a Alpine base and even better for a low end device like the Pinephone. The main advantage of Arch is the AUR and it&rsquo;s always up to date packages which makes it perfect as a testing setup and for many of your probably also as daily driver but I tend to spend a lot of time for my daily driver setups to get them right once and then use them till I want to change something. I also took PostmarketOS edge since I think stable isn&rsquo;t quite there yet but as soon as I get along with stable I will switch to that. So to sum it up what I use as my current daily driver phone is PostmarketOS edge with my favorite mobile DE Phosh. I can&rsquo;t really say why but I just don&rsquo;t like Plasma mobile in it&rsquo;s current state it somehow feels cheap to me (personal taste). I though it could be useful to some to also include parts of the installation because of the sometimes annoying but awesome Pmbootstrap so this post will probably be a bit longer then my usual ones. As always everything is done on my 2GB RAM Pinephone and may be a tiny bit different on a 3GB version.</p>
+<h2 id=installation>Installation: <a href=#installation class=anchor>🔗</a></h2><p>PostmarketOS doesn&rsquo;t give you any really good images instead they have a tool for it (Pmbootstrap). It can be a bit annoying at times but over all it&rsquo;s actually really nice since you don&rsquo;t get years old software all the time. You can get Pmbootstrap over pip or like I did it just from <a href>this</a> Github.</p>
+<ol>
+<li>Install Pmbootstrap on your Linux computer via pip or from the git repo. If you had it installed before make sure to run <code>pmbootstrap status</code> to check for updates and update in case there are any!</li>
+<li>Start Pmbootstrap with the command <code>pmbootstrap init</code> and select what you want. I will go for the edge repo since the stable branch isn&rsquo;t quite there yet in my opinion and I will also enable none free firmware since it&rsquo;s currently kind of a must. As user interface I will go with Phosh since it&rsquo;s my current favorite and just generally the in my opinion most usable DE right now.</li>
+<li>After init you have to continue with <code>pmbootstrap install</code>. I think you can also install it directly but I will just go for a ISO image here. I also want fde (full disk encryption) so I will go for <code>pmbootstrap install -fde</code> which I would recommend to everyone. Oh and don&rsquo;t type a password in when it asks you for one since Phosh and Plasma mobile both currently only work with a pin so just make it numbers only. The encryption password in case you enabled it is a different case for that you should get creative to find a secure one!</li>
+<li>In case you did it like me (aim for a ISO image) you have to use <code>pmbootstrap export</code>. When it&rsquo;s done it should tell you that a image is in <code>/tmp/postmarketOS-export</code> and with that you are almost done.</li>
+<li>The final step is to type <code>pmbootstrap shutdown</code> and continue by flashing the ISO it gave you with whatever tool you like. I just used Gnome Disks but Etcher and others work to and in case you prefer terminal tools that&rsquo;s a option as well. That&rsquo;s it you should have a working image of PostmarketOS flashed to your device now :D</li>
+</ol>
+<h2 id=apps-i-use>Apps I use: <a href=#apps-i-use class=anchor>🔗</a></h2><p>A list of the Apps I actually use on my device which you can hopefully take as inspiration.</p>
+<ul>
+<li><strong>Angelfish:</strong> The default Plasma mobile web browser which also works great on PostmarketOS and is useful as backup browser next to Firefox.</li>
+<li><strong>Portfolio:</strong> A minimal GTK mobile first file manager which still lacks a few features but works like a charm.</li>
+<li><strong>Audiotube:</strong> A Youtube music player which is still extremely new but already works quite nice and is a must have if you sometimes listen to music that isn&rsquo;t on your device.</li>
+<li><strong>PostmarketOS Tweaks:</strong> A Gnome tweaks inspired app for PostmarketOS Phosh which allows you to change some settings like animations and theme.</li>
+<li><strong>Gnome Disks:</strong> If you are a Linux user you probably know this utility it&rsquo;s just useful to work with SD cards on the Pinephone.</li>
+<li><strong>Gnome Feeds:</strong> My favorite GTK feed reader (made for local feeds).</li>
+<li><strong>Tootle:</strong> A amazing GTK Mastodon client which works like a charm.</li>
+<li><strong>Foliate:</strong> A feature rich GTK EBook reader which works very well on the Pinephone.</li>
+<li><strong>Calindori:</strong> The Plasma mobile calendar app which is just amazing no matter your DE.</li>
+<li><strong>Gnome Weather:</strong> Lately this one is broken for me (gets stuck in a loading loop on the second start and never recovers) but if it would work it would be a damn awesome app.</li>
+<li><strong>Fragments</strong> I haven&rsquo;t had to use it yet but a nice torrent client is always nice to have.</li>
+<li><strong>Flatseal:</strong> The best way to handle Flatpak permissions and in case you use Flathub with it&rsquo;s low security standards a absolute must have to make the sandbox a actual sandbox.</li>
+<li><strong>Hydrogen:</strong> This one is technically more of a website then a app but it&rsquo;s still my favorite Matrix client for the Pinephone till the Chatty implementation is ready.</li>
+<li><strong>Eye of Gnome:</strong> A very simple image viewer which works decent enough on the Pinephone.</li>
+</ul>
+<h2 id=cool-apps>Cool Apps: <a href=#cool-apps class=anchor>🔗</a></h2><p>Just some apps I really like which I simply don&rsquo;t have a use for but you may so why not include them :D</p>
+<ul>
+<li><strong>Quickddit</strong> A fantastic Reddit client which I would go for if I used Reddit more.</li>
+<li><strong>Cawbird</strong> A nice GTK Twitter client which works decent but I only tried it with a tempmail account so my knowledge is limited here.</li>
+<li><strong>Goodvibes:</strong> In case you want a internet radio client for whatever reason this one looks amazing to me.</li>
+<li><strong>Onionshare:</strong> It doesn&rsquo;t scale that well but it&rsquo;s usable so in case you have to upload any files that should stay anonymous you can use it.</li>
+<li><strong>Gnome Password Safe:</strong> I really have to update my KeePass db so I can use this app better. Bitwarden is nice and all but it really starts to annoy me with that bloated web interface that can&rsquo;t scale for mobile screens at all.</li>
+<li><strong>Gnome Podcasts:</strong> I usually don&rsquo;t listen to podcasts so this app lands here but it&rsquo;s actually fantastic and I may try the Pine64 podcast and see if I like the media format after all.</li>
+<li><strong>Spot:</strong> I don&rsquo;t use Spotify but in case you do and have a premium account this client looks really damn nice to me.</li>
+<li><strong>Telegram:</strong> I simply don&rsquo;t use Telegram and would choose Matrix, XMPP and even Signal or Wire over it every time but in case you like it the desktop client works nice on the Pinephone. Just keep in mind that you won&rsquo;t have any encryption and I will leave it at that before I start to rage.</li>
+<li><strong>Gnome Authendicator:</strong> I should really start to use 2factor more but currently I got the app installed and never used it.</li>
+<li><strong>Briar GTK:</strong> Last time I tried it I had to build this damn Java/Python mess from the AUR which takes ages and it kept breaking from time to time but if you use Briar you may have more patience then me.</li>
+<li><strong>Castor:</strong> A adaptive GTK Gemini browser so in case you use Gemini this is probably your best pick on the Pinephone.</li>
+<li><strong>Hackgregator:</strong> A GTK Hackernews reader that works nicely on the Pinephone.</li>
+<li><strong>Index:</strong> A more feature rich file manager which you can use in case Portfolio lacks something you need.</li>
+<li><strong>Pika Backup:</strong> I currently don&rsquo;t have any backup since I use all my SD cards to play around but this seems like a nice option in case you want one.</li>
+</ul>
+<h2 id=general-usability>General usability: <a href=#general-usability class=anchor>🔗</a></h2><p>So now let&rsquo;s talk a bit about the general usability aka Calls, SMS, Battery life, performance and so on.</p>
+<ul>
+<li><strong>Battery:</strong> This was a huge issue when I received my device (PostmarketOS CE) but it got a LOT better since then. With a SIM card in the device and WLAN disabled I can use it for a day but if I use the screen to much it sometimes dies a bit early. So in short still not perfect but usable enough for me.</li>
+<li><strong>Calls:</strong> Till lately I had issues with calls but currently it seems to work just fine. I can recieve calls and my device wakes up basically instantly and in terms of signal strength I never ran into any issues. Keep in mind tho that the Pinephone doesn&rsquo;t support all providers that well so you could potentially run into issues.</li>
+<li><strong>SMS:</strong> These work perfectly for me for a while now but I am not that sure about MMS. I never write long texts over SMS and would never ever even think about sending pictures over it so I can&rsquo;t really tell you how well they work. I still wait damn hard for the Matrix implementation to Chatty and seriously hope they also get calls working because I prefer it over the old unsecure methods of communication.</li>
+<li><strong>Performance:</strong> Now that&rsquo;s a bit more tricky to answer then the other ones specially in a blog post. I would recommend you to watch videos from Linmob or Martijn if you want to actually see it but I will do my best to describe it here to. My PostmarketOS Phosh install on the internal storage runs surprisingly well in my experience. Almost all of the big lags are gone and the device feels decent for the most part. Scrolling can still feel a bit shitty and sometimes you have minor lags but the system and system apps with the exception of Gnome Software and Megapixels tend to run absolutely acceptable in my opinion. Some apps and heavy websites obviously make issues but that&rsquo;s not really the fault of PostmarketOS or the Pinephone and probably won&rsquo;t change much any time soon. WebkitGTK still sucks and makes many Gnome apps that make use of web technologies run very poorly but in most cases you can just disable Javascript to make it usable. In case the a bit more sluggish experience isn&rsquo;t something for you you should probably not buy a Pinephone or wait another year. Obviously the Pinephone will never be able to keep up with your Android or iOS flagship because the hardware just isn&rsquo;t there but so far every release of Phosh and Phoc improves performance a lot and so far I can&rsquo;t see much of a slowdown so we will have to wait and see how far people manage to push the Pinephones hardware software side :D</li>
+<li><strong>Camera:</strong> The camera works and it does so surprisingly well for the mostly FOSS software behind it but there is no comparison to a modern Phone camera. I am not a expert but as far as I know that has two origins because while modern Phone cameras are also better hardware then the Pinephones you also have to keep in mind that the only reason phone pictures look that good is software. A modern phone camera probably relies more on software then the actual hardware and if you look closely you can see it to. In short I wouldn&rsquo;t use the Pinephone to capture a moment because the basically total lack of color accuracy prevents me from doing so but it&rsquo;s enough to take a quick picture of something and look at it later.</li>
+<li><strong>Screen:</strong> I will start this point with you will probably disagree with me. I am a defender of 1080p screens for everything that isn&rsquo;t a huge TV covering up half your wall and see no reason to go beyond 720p on a phone. Yes you will probably see the difference if you put a 720p and a 1080p display side by side but let&rsquo;s be honest it&rsquo;s a damn phone and as long as it&rsquo;s not under 720p this will have absolutely no effect on the usability or experience. Generally the Pinephone screen is a bit dark in direct sunlight but beside of that just good and idk why I would want a different one.</li>
+<li><strong>Alarm Clock/Reminder:</strong> This one may sound odd to you but because of deep sleep it&rsquo;s a actual issue. A few weeks ago the demo app Alarm Mobile came out but it relies on SystemD and from how it currently looks I expect the Gnome Clock implementation to work the same. That means the SystemD free PostmarketOS will need a custom implementation and that sucks specially for something so essential. I always use my Phone to wake up and even to set reminders when I cook and stuff like that so I really hope that PostmarketOS will also get a solution for that soon.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmXbrKBb94Rt7fHAT9vV7xgaCwASBVN62EiyS5naaqCbuH/20210411_16h37m27s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmXbrKBb94Rt7fHAT9vV7xgaCwASBVN62EiyS5naaqCbuH/20210411_16h37m41s_grim.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=https://gateway.pinata.cloud/ipfs/QmXbrKBb94Rt7fHAT9vV7xgaCwASBVN62EiyS5naaqCbuH/20210411_16h36m34s_grim.png alt>
+</p></th>
+</tr>
+</thead>
+</table>
+</div>
+<div class=tags>
+<a href=https://gamey.tech/tags/pinephone>Pinephone</a>
+<a href=https://gamey.tech/tags/archlinux>ArchLinux</a>
+<a href=https://gamey.tech/tags/dailydriver>Dailydriver</a>
+</div>
+</section>
+</main>
+<footer id=footer>
+<div id=social>
+<a class=symbol href=https://fosstodon.org/@gamey rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-mastodon" viewBox="0 0 16 16"><path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339.0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027.0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614.0 01-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804.0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727.0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856.0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74.0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/></svg>
+</a>
+<a class=symbol href=https://twitter.com/gamey404 rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038.0 9.341-5.003 9.341-9.334.0-.14.0-.282-.006-.422A6.685 6.685.0 0016 3.542a6.658 6.658.0 01-1.889.518 3.301 3.301.0 001.447-1.817 6.533 6.533.0 01-2.087.793A3.286 3.286.0 007.875 6.03 9.325 9.325.0 011.108 2.601a3.289 3.289.0 001.018 4.382A3.323 3.323.0 01.64 6.575v.045a3.288 3.288.0 002.632 3.218 3.203 3.203.0 01-.865.115 3.23 3.23.0 01-.614-.057 3.283 3.283.0 003.067 2.277A6.588 6.588.0 01.78 13.58 6.32 6.32.0 010 13.535 9.344 9.344.0 005.026 15z"/></svg>
+</a>
+</div>
+<div class=copyright>
+Blog by gamey ❤️
+</div>
+</footer>
+</body>
+</html>
