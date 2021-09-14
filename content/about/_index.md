@@ -15,4 +15,4 @@ My name is Nils, as a hobby I write little blog posts under the nick Gamey. They
 - Twitter: https://twitter.com/gamey404
 - LBRY: https://lbry.tv/$/invite/@gamey:c
 
-*Powered by [Hugo](https://gohugo.io/) static site generator using the [mini](https://themes.gohugo.io/themes/hugo-theme-cactus-plus/) theme and hosted on [Uberspace](https://uberspace.de/en/)*
+*Powered by [Hugo](https://gohugo.io/) static site generator using the [mini](https://themes.gohugo.io/themes/hugo-theme-cactus-plus/) theme and hosted on [Github](https://github.com/Gamey404)*
