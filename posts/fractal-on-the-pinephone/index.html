@@ -27,7 +27,7 @@
 ·
 </span>
 <span>
-579 words
+571 words
 </span>
 <span class=split>
 ·
@@ -56,7 +56,7 @@
 </details>
 </aside>
 <div class=content>
-<h1 id=fractal-encryption-and-keyring-fix-on-the-pinephone>Fractal Encryption and Keyring fix on the Pinephone <a href=#fractal-encryption-and-keyring-fix-on-the-pinephone class=anchor>🔗</a></h1><p>Today I want to take a look at a fantastic Matrix client on the Pinephone and show you workarounds for it&rsquo;s main two issues. Fractal is a awesome Matrix client for Gnome and Phosh but it currently lacks support for encryption and on Phosh it can&rsquo;t open the Gnome Keyring (safe your login). Luckily there are workarounds for those two issues and those are what this post will focus on. If you want to know more about all current options to use Matrix on the Pinephone I made a post about them a while ago which is linked down below.</p>
+<p>Today I want to take a look at a fantastic Matrix client on the Pinephone and show you workarounds for it&rsquo;s main two issues. Fractal is a awesome Matrix client for Gnome and Phosh but it currently lacks support for encryption and on Phosh it can&rsquo;t open the Gnome Keyring (safe your login). Luckily there are workarounds for those two issues and those are what this post will focus on. If you want to know more about all current options to use Matrix on the Pinephone I made a post about them a while ago which is linked down below.</p>
 <h2 id=pantalaimonhttpsgithubcommatrix-orgpantalaimon-for-encryption><a href=https://github.com/matrix-org/pantalaimon/ target=_blank rel=noopener>Pantalaimon</a> for Encryption <a href=#pantalaimonhttpsgithubcommatrix-orgpantalaimon-for-encryption class=anchor>🔗</a></h2><p>Pantalaimon is a E2EE aware deamon proxy for Matrix messengers. You can use it to enable E2EE in clients that actually don&rsquo;t have encryption implemented yet. You probably guessed it, I will show you how to use Pantalaimon for Fractal now so you can use it for secure chats.</p>
 <ol>
 <li>Before you can install Pantalaimon you need libolm (The matrix encryption library). If your distro provides a package for it use that and if not you can find instructions <a href=https://gitlab.matrix.org/matrix-org/olm/blob/master/README.md target=_blank rel=noopener>here</a>.</li>
