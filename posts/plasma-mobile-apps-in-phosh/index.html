@@ -27,7 +27,7 @@
 ·
 </span>
 <span>
-640 words
+713 words
 </span>
 <span class=split>
 ·
@@ -62,6 +62,7 @@
 <li>First of is <code>QT_QPA_PLATFORM=wayland</code> which ensures that the app uses Wayland and not XWayland which has a quite big performance impact and when using Wayland you probably also want to ensure it&rsquo;s window decorations are disabled or you will see a ugly frame around your app <code>QT_WAYLAND_DISABLE_WINDOWDECORATION=1</code>.</li>
 <li>With that out of the way you have to make sure the theming is right to make them look roughly how they would in Plasma mobile and for that you need <code>QT_QPA_SYSTEM_ICON_THEME=breeze</code> which ensures the app uses Plasmas Breeze theme, <code>QT_QUICK_CONTROLS_MOBILE=1</code> which sets QTQuick to a mobile mode without which the scaling and position of certain elements isn&rsquo;t correct and <code>QT_QUICK_CONTROLS_STYLE=org.kde.breeze</code> which also ensures you use the Breeze theme.</li>
 <li>Last up Kirigami has a low performance mode to reduce lags on devices like the Pinephone which you can set with <code>KIRIGAMI_LOWPOWER_HARDWARE=1</code></li>
+<li>There is a issue causing glitches and crashes which seems to be triggered by heavy use of graphical image manipulation (e.g. blurring) on some ARM chips including the Pinephones. So far Kasts seems to be the only app effected but it&rsquo;s not Kasts exclusive and Plasma mobile defaults to a env variable that fixes it so you should probably just add <code>QT_ENABLE_GLYPH_CACHE_WORKAROUND=1</code>. Thanks to <a href=https://fosstodon.org/web/statuses/106974498996613997 target=_blank rel=noopener>Mogwai</a> the Kasts creator for telling me about this!</li>
 </ul>
 <p>To actually set these you just have to edit <code>/etc/environment</code> with a text editor like nano or Gedit and add all of them which should look like this when you are done:</p>
 <div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#
