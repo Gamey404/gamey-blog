@@ -10,6 +10,7 @@ tags = [
 +++
 
 Today I thought I would do a full rewrite of my Pinephone browsers post because it's obviously a important peace on every phone specially with a limited app selection. I hope this is helpful to some of you and as always all my testing is done on my 2GB Pinephone with DanctNIX Arch Linux.
+<!--more-->
 
 ## Firefox:
 The browser I use by far the most and one that worked decent since I got my device. The UI isn't perfect since it's essentially the desktop one with a few tricks applied via the mobile config package but it's definitely usable. Firefox is decently fast, scales well enough to be usable and generally is still the browser that works best for me. Some issues are that Addons can't scale so while I can and do use UBlock I can't use it's UI, the removal of SSB/PWA features broke my Matrix setup over the minimal web UI Hydrogen, videos work but I can't get back out of fullscreen when I toggled it on once and some settings don't work because of scaling issues (mostly the ones that open a small window). If you use a Pinephone FF is most likely your default browser and it deserves that in my opinion but ultimately a mobile UI would be really cool to have.

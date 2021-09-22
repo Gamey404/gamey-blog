@@ -10,6 +10,7 @@ tags = [
 +++
 
 Yet another post about five of the in my opinion best Pinephone apps but I promised to make a small series out of this so it's probably not a big surprise. You can find the last two posts linked down below if you are interested in more after this and as always the screenshots and testing where done on my 2GB Pinephone model in DanctNIX mobile Archlinux.
+<!--more-->
 
 ## Fluffychat:
 Fluffychat is a responsive Matrix client build with Flutter and replaced Hydrogen for me. It still suffers from Flutter related issues like a top bar that looks like a desktop Gnome one and really messes with the beautiful look of the app, lacks notification support on the Pinephone (that's actually WIP and not related to Flutter) and a really annoying issue with the onscreen keyboard which triggers every time you open the window switcher and basically forces you to restart Fluffychat before you can type properly again but aside of that it's a actually well working and good looking Matrix client. There also where some performance issues but those seem to have improved a ton since the last Flutter release and I really hope for future patches that fix the other issues. All in all it's the Matrix client I would currently recommend the most and the only reason it wasn't in my past "Matrix on the Pinephone" posts is that it simply didn't work back then.

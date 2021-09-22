@@ -9,8 +9,8 @@ tags = [
 
 +++
 
-# Fractal Encryption and Keyring fix on the Pinephone
 Today I want to take a look at a fantastic Matrix client on the Pinephone and show you workarounds for it's main two issues. Fractal is a awesome Matrix client for Gnome and Phosh but it currently lacks support for encryption and on Phosh it can't open the Gnome Keyring (safe your login). Luckily there are workarounds for those two issues and those are what this post will focus on. If you want to know more about all current options to use Matrix on the Pinephone I made a post about them a while ago which is linked down below.
+<!--more-->
 
 ## [Pantalaimon](https://github.com/matrix-org/pantalaimon/) for Encryption
 Pantalaimon is a E2EE aware deamon proxy for Matrix messengers. You can use it to enable E2EE in clients that actually don't have encryption implemented yet. You probably guessed it, I will show you how to use Pantalaimon for Fractal now so you can use it for secure chats.

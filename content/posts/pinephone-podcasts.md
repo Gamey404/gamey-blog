@@ -10,6 +10,7 @@ tags = [
 +++
 
 Today I want to talk about Podcasts on mobile GNU/Linux devices. As one of the last truly free media formats Podcasts are a perfect match with devices like the Pinephone and it's also what I enjoyed most of in terms of content formats on mine. I have to admit that I never really was into Podcasts but lately I discovered that one of my favorite newspapers (Der Falter) has one and from there it just went on with my all time favorite Darknet Diaries which is just fantastic, the Pinetalk and the PostmarketOS podcast. I bet I will discover many more in the future because now I am hooked!
+<!--more-->
 
 ## Kasts:
 Kasts is the main Plasma mobile podcast app and my so far favorite. It's made with QT/Kirigami which causes a few lags here and there but nothing to bad considering the amount of episodes most of the podcasts I listen to have and it's definitely usable on Phosh to. It has all the features I want from a Podcast app like remembering where in the episode I was, keeping the device from going in deep sleep which would stop the playback after a few minute, downloading, a really good UI to manage downloaded episodes, a view that shows the episodes of all podcasts in chronological order and one that shows all the podcasts I subscribed to which is basically all I need. You may miss the ability to stream episodes but I prefer to download them anyway because I use a prepaid simcard and still like to be able to do stuff like take a walk while listening to a episode. Over all I really recommend Kasts and will probably keep using it for a while!

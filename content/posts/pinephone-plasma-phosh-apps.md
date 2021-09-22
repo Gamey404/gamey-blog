@@ -10,6 +10,7 @@ tags = [
 +++
 
 Today I will touch on a topic that I had issues with for a long time till I somewhat figured it out or I at least hope I did. It's not at all hard to do but you have to know what to do and since I found no proper guide or anything about this except for a environment variable [list](https://github.com/1peter10/linuxphone-tweaks/blob/main/etc/environment) by Peter from linmob I thought I would make my own. I want to clarify that I am not a expert and my experience with Plasma apps is fairly limited but I got the few things that I struggled with together and wrote a quick post that will hopefully help some of you out there! As always all of my testing is done on my 2GB Pinephone running DanctNIX Archlinux mobile and these are things I also did on my PostmarketOS install.
+<!--more-->
 
 ## Install dependencies:
 First of all you have to make sure to install the required QT packages which you can for the most part do using the meta package ``plasma-framework``.

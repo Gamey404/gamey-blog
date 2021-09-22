@@ -10,6 +10,7 @@ tags = [
 +++
 
 Today I want to highlight five more of the in my opinion best Pinephone apps in a little more detail. I think I will make a series out of this because I like to do it and apparently people like to read it. As always all of my testing is done on my 2GB Pinephone with DanctNIX Arch Linux.
+<!--more-->
 
 ## Tubefeeder:
 Tubefeeder is something in between a feed reader and Youtube client made with GTK and written in Rust. It allows you to follow Youtube channels and builds a convenient feed out of them, it then plays the videos using youtube-dl and MPV to improve performance and allow for somewhat fluid 720p video playback even on the Pinephone. Additionally it has a "watch later" list, a easy way to follow channels with just the name and some filters I don't really understand.

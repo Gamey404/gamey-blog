@@ -10,6 +10,7 @@ tags = [
 +++
 
 Today I thought I would make a small list with some of the in my opinion best Pinephone apps. As always it's done on DanctNIX Arch with Phosh and my 2GB Pinephone and since I don't have a Librem5 I can't say anything specific about it but most of the apps should work across all true mobile GNU/Linux Phones.
+<!--more-->
 
 ## Tootle: 
 Tootle is a simple GTK Mastodon client written in Vala. It's fully mobile compatible and a generally nice experience since a few updates ago and works perfect for me. It's in fact one of my favorite Pinephone apps by now so I can't recommend it enough!
