@@ -11,10 +11,10 @@ tags = [
 
 Today I thought I would make a small list with some of the in my opinion best Pinephone apps. As always it's done on DanctNIX Arch with Phosh and my 2GB Pinephone and since I don't have a Librem5 I can't say anything specific about it but most of the apps should work across all true mobile GNU/Linux Phones.
 
-**Note:** This is a old article but I rewrote most of it on 07.10.2021 to fix and update variouse things so enjoy! :D
+**Note:** This is a old article but I rewrote most of it on 07.10.2021 to fix and update various things so enjoy! :D
 
 ## Tootle: 
-One of my by far favorite Linux Phone apps with awesome adaptive design using GTK3 and a somewhat minimal approach is the Mastodon client Tootle. The app relies a lot on other system defaults for things like videos and images which probably contributes to the amazing performance even on a low power ARM chip like the Pinephones and the featureset is kept minimal. Additionally there are design approaches like somewhat hiding things like stars and boosts which I really appreciate. There is a work in progress GTK4 app but sadly the dev Beaklegray tolled me he just switched job and has a fairly stict time limit so he will take some time off from coding to get everything sorted. I totally understand that and can't specially brag about my track record when it comes to writing new articles ether even without any excuse but I still hope that it wont be to long till he continues. I am absolutely in love with Tootle and GTK4/Libadwaita and think the two together would be awesome to have! Till then just get Tootle, trust me it pays off!
+One of my by far favorite Linux Phone apps with awesome adaptive design using GTK3 and a somewhat minimal approach is the Mastodon client Tootle. The app relies a lot on other system defaults for things like videos and images which probably contributes to the amazing performance even on a low power ARM chip like the Pinephones and the feature-set is kept minimal. Additionally there are design approaches like somewhat hiding things like stars and boosts which I really appreciate. There is a work in progress GTK4 app but sadly the dev Beaklegray tolled me he just switched job and has a fairly strict time limit so he will take some time off from coding to get everything sorted. I totally understand that and can't specially brag about my track record when it comes to writing new articles ether even without any excuse but I still hope that it wont be to long till he continues. I am absolutely in love with Tootle and GTK4/Libadwaita and think the two together would be awesome to have! Till then just get Tootle, trust me it pays off!
 
 | ![](/../screenshots/Tootle/20210804_15h09m35s_grim.png) | ![](/../screenshots/Tootle/20210722_15h41m10s_grim.png) |
 |-------|-------|
@@ -29,7 +29,7 @@ One of my by far favorite Linux Phone apps with awesome adaptive design using GT
 | PostmarketOS | tootle |
 
 ## Audiotube:
-If you like streaming music like me but don't have a Spotify premium account Youtube is probably your go to and this QML/Kirigami app provides a really convinient way to stream audio only content from it using youtube-dl and ytmusicapi. With Audiotube you can find and easily stream basically every song on Youtube and that with a fairly nice UI and nead queeue functionality. It's still a relatively new app and there are features I really miss like downloading songs, local playlists, proxy functionality over something like Invidious or Piped and a few more but I already use it a ton and absolutely love the app! If you haven't tried it yet you really should do so independend of your DE and distro.
+If you like streaming music like me but don't have a Spotify premium account Youtube is probably your go to and this QML/Kirigami app provides a really convenient way to stream audio only content from it using youtube-dl and ytmusicapi. With Audiotube you can find and easily stream basically every song on Youtube and that with a fairly nice UI and neat queue functionality. It's still a relatively new app and there are features I really miss like downloading songs, local playlists, proxy functionality over something like Invidious or Piped and a few more but I already use it a ton and absolutely love the app! If you haven't tried it yet you really should do so independent of your DE and distro.
 
 | ![](/../screenshots/Audiotube/20210324_23h03m03s_grim.png) | ![](/../screenshots/Audiotube/20210324_23h03m55s_grim.png) | ![](/../screenshots/Audiotube/20210324_23h04m48s_grim.png) |
 |-------|-------|-------|
@@ -59,7 +59,7 @@ A feature rich and nice to look at EBook reader made with GTK3. I am not that mu
 | PostmarketOS | foliate |
 
 ## Portfolio:
-Portfolio is a very minimal mobile first file manager made with GTK3 and written in Python. It's now the default for most Phosh distros and I probably wouldn't add it here nowdays because people know about it qute well but it's here and it's awesome so whatever I guess. There are still some nice to have features lacking like proper archive support and favorites but if you used Portfolio once you just have to love it. While mobile optimized apps are great only the mobile first approach shows what Libhandy can truly do and it's amazing!
+Portfolio is a very minimal mobile first file manager made with GTK3 and written in Python. It's now the default for most Phosh distros and I probably wouldn't add it here nowdays because people know about it quite well but it's here and it's awesome so whatever I guess. There are still some nice to have features lacking like proper archive support and favorites but if you used Portfolio once you just have to love it. While mobile optimized apps are great only the mobile first approach shows what Libhandy can truly do and it's amazing!
 
 | ![](/../screenshots/Portfolio/20210724_08h48m36s_grim.png) | ![](/../screenshots/Portfolio/20210724_08h49m01s_grim.png) |
 |-------|-------|-------|
