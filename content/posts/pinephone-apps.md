@@ -78,9 +78,10 @@ Quickddit is a awesome and feature rich Reddit client for users with and without
 
 **Note:** Since it's a Ubuntu Touch app building is a bit different but you can find build instructions in Peters article on Reddit clients for the Pinephone [here](https://linmob.net/reddit-clients-for-mobile-linux/)! 
 
-| ![](/../screenshots/Quickddit/20210929_21h58m12s_grim.png) | ![](/../screenshots/Quickddit/20210929_21h58m50s_grim.png) | ![](/../screenshots/Quickddit/20210929_21h59m39s_grim.png) |
+| ![](/../screenshots/Quickddit/quickddit-1.png) | ![](/../screenshots/Quickddit/quickddit-2.png) | ![](/../screenshots/Quickddit/quickddit-3.png) |
 |-------|-------|-------|
-| ![](/../screenshots/Quickddit/20210929_22h00m29s_grim.png) | ![](/../screenshots/Quickddit/20210929_22h01m10s_grim.png) | ![](/../screenshots/Quickddit/20210929_22h03m37s_grim.png) |
+| ![](/../screenshots/Quickddit/quickddit-4.png) | ![](/../screenshots/Quickddit/quickddit-5.png) | ![](/../screenshots/Quickddit/quickddit-6.png) |
+| ![](/../screenshots/Quickddit/quickddit-7.png) | ![](/../screenshots/Quickddit/quickddit-8.png) | ![](/../screenshots/Quickddit/quickddit-9.png) |
 
 | Type: | Package: |
 |-------|-------|
