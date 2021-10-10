@@ -14,7 +14,7 @@ Today I will focus on Reddit clients, yea I know Reddit is big tech but it can b
 ## Headlines
 A relatively new and beautiful GTK4 Reddit client that's very much in the Spirit of Giara but seems to work better on low end devices. There are some annoyingly long loading screens on the Pinephone that I really hope are fixable but when something is loaded it's a really smooth experience with close to no lags. The client still seems to be in very active development and will probably change quite a bit in the future so certain things like issues requesting the Gnome keyring (required to access your login) will probably be patched soon if they aren't already. This is definitely my personal favorite after testing all the clients on this list and I will probably stick to it for now :D
 
-**Note:** In it's current stage Headlines doesn't seem to unlock the Gnome keyring so I recommend [Seahorse]() as a nice way to do it manually.
+**Note:** In it's current stage Headlines doesn't seem to unlock the Gnome keyring so I recommend Seahorse as a nice way to do it manually.
 
 | ![](/../screenshots/Headlines/headlines-10.png) | ![](/../screenshots/Headlines/headlines-9.png) | ![](/../screenshots/Headlines/headlines-8.png) |
 |-------|-------|-------|
