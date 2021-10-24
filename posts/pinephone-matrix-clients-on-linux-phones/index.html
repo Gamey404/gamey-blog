@@ -1,0 +1,431 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>PINEPHONE: Matrix clients on Linux Phones! | Gamey</title>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,minimum-scale=1">
+<meta name=description content="List of best avalable Matrix clients for Linux Phones. (E.g. Pinephone, Librem5, OnePlus)">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=ROBOTS content="NOINDEX, NOFOLLOW">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/images/favicon.ico type=image/x-icon>
+</head>
+<body>
+<nav class=navigation>
+<a href=/> <span class=arrow>←</span>Home</a>
+<a href=/posts>Archive</a>
+<a href=/tags>Tags</a>
+<a href=/about>About</a>
+<a class=button href=https://gamey.tech/index.xml>Subscribe</a>
+</nav>
+<main class=main>
+<section id=single>
+<h1 class=title>PINEPHONE: Matrix clients on Linux Phones!</h1>
+<div class=tip>
+<time datetime="2021-10-24 00:00:00 +0000 UTC">Oct 24, 2021</time>
+<span class=split>
+·
+</span>
+<span>
+1792 words
+</span>
+<span class=split>
+·
+</span>
+<span>
+9 minute read
+</span>
+</div>
+<aside class=toc>
+<details>
+<summary>Table of Contents
+</summary>
+<div>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#fluffychat>Fluffychat</a></li>
+<li><a href=#hydrogen>Hydrogen</a></li>
+<li><a href=#nheko>Nheko</a></li>
+<li><a href=#neochat>Neochat</a></li>
+<li><a href=#fractal>Fractal</a></li>
+<li><a href=#chatty>Chatty</a></li>
+<li><a href=#others>Others</a></li>
+<li><a href=#more>More</a></li>
+</ul>
+</nav>
+</div>
+</details>
+</aside>
+<div class=content>
+<p>I actually wrote two articles about this topic ages ago and there has been depressingly little development since then but there have been changes that make the future look a lot brighter. What I am referring to is Matrix support on Linux phones and with that push notifications which essentially don&rsquo;t exist in the current GNU/Linux ecosystem but are a essential component for a good Smartphone. I am probably not the only one who got frustrated by the current state more then once and possibly even lost hope altogether but there is a light at the end of a long tunnel and that&rsquo;s what I want to show you in this article! Even after all my research I am not able to find any good solutions and trust me I tried a lot but as I pointed out already there are clients that I have very high hopes in for the future and it is already possible to use some just in very limited capacity because of various issues, the main one being a total lack of push notifications.</p>
+<p>The solution for push notifications will by the looks of it be Unified Push which is already in use in a few Android apps. I had a short chat with Vurpo who did some initial work on Unified push for Linux and and she tolled me that it&rsquo;s still very much work in progress and currently not usable but she already wrote specs, proof of concept implementations and implemented it for Nheko earlier this year, after that she sadly ran out of time so it&rsquo;s not complete yet but that&rsquo;s a great start. I am sure some project will pick his work back up and finish it because so many apps need push notifications and I&rsquo;m looking forward to that!</p>
+<h2 id=fluffychat>Fluffychat <a href=#fluffychat class=anchor>🔗</a></h2><p>A beautiful cross platform Matrix client made in Flutter and for mobile screens with encryption support, room discovery functionality and support for most Matrix features like &ldquo;Spaces&rdquo; or Markdown rendering. That seems to good to be true right? Well kinda, it&rsquo;s all true but the Flutter part causes issues like not specially amazing performance, a desktop like Gnome header bar I can&rsquo;t disable, no current background notification support and a extremely annoying bug with Wayland onscreen keyboards which after switching the window once causes the app to always jump back to the start of the text when you type and can only be fixed with a restart. Over all this is a absolutely awesome Matrix client for Linux Phones but Flutter really dose limit it&rsquo;s usability to a point where I sometimes feel like throwing my Pinephone out the window. Luckily Fluffychat has a awesome dev and community, while they can&rsquo;t do much about the Flutter issues they already work on a implementation for &ldquo;unified push&rdquo; which should enable push notifications for Linuxphone users.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>So far I only got it to work as Flatpak but there may be another way that I just don&rsquo;t know about.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=/../screenshots/Fluffychat/fluffychat-1.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/Fluffychat/fluffychat-2.png alt>
+</p></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=/../screenshots/Fluffychat/fluffychat-3.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=/../screenshots/Fluffychat/fluffychat-4.png alt>
+</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://gitlab.com/famedly/fluffychat/ target=_blank rel=noopener>https://gitlab.com/famedly/fluffychat/</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>fluffychat fluffychat-git (Both seem broken)</td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/im.fluffychat.Fluffychat target=_blank rel=noopener>https://flathub.org/apps/details/im.fluffychat.Fluffychat</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id=hydrogen>Hydrogen <a href=#hydrogen class=anchor>🔗</a></h2><p>While this technically isn&rsquo;t a app it&rsquo;s a very nice web client optimized for low power devices and works fantastic on the Pinephone. It&rsquo;s very barebones with a ton of features like joining rooms, sorting rooms in any way, spaces, most settings and more just not implemented which seems to be the goal here actually. A nice way to read and write a bit on Matrix that works on basically any hardware and simply doesn&rsquo;t need to be a fully features client. It dose have some really nice features like E2E, multi account support and a handy setting to scale down images in case you internet is as bad as your hardware. When Firefox first removed all PWA functionality it initially broke but as far as I can tell it seems to work fine again and I definitely recommend if you have issues with Fluffychat and just as a backup in general.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If you are on Plasma mobile just use Angelfish to use it as webapp but if you aren&rsquo;t I sadly don&rsquo;t have any solution I can recommend.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=/../screenshots/Hydrogen/hydrogen-1.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/Hydrogen/hydrogen-2.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=/../screenshots/Hydrogen/hydrogen-3.png alt>
+</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://github.com/vector-im/hydrogen-web target=_blank rel=noopener>https://github.com/vector-im/hydrogen-web</a></td>
+</tr>
+<tr>
+<td>Universal</td>
+<td><a href=https://hydrogen.element.io target=_blank rel=noopener>https://hydrogen.element.io</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id=nheko>Nheko <a href=#nheko class=anchor>🔗</a></h2><p>A modern, feature rich native Matrix client designed for desktop devices but with some slight mobile optimizations. It&rsquo;s far from perfectly optimized but since Nheko doesn&rsquo;t use KDEs or Gnomes frameworks it&rsquo;s really cool that the dev still invested time for some manual optimization to make it usable on Linux phones. Issues include long starting times and often completely refusing to start, bad scrolling that sometimes triggers a chat, hard to hit buttons, often pre selected rooms that you then can&rsquo;t click on till you opened another one and go back and more small bugs like those. I actually used Nheko for a while and I&rsquo;m thankful for all the work that people put into it but at the end of the day it&rsquo;s a desktop client, I think that&rsquo;s what it will continue to be and there is nothing wrong with that.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>Nheko may need <code>scale-to-fit nheko</code> to fit the screen.</li>
+<li>Before you can use Nheko you also have to set <code>mobile_mode=true</code> in <code>.config/nheko/nheko.conf</code> or for Flatpak users <code>.var/app/io.github.NhekoReborn.Nheko/config/nheko/nheko.conf</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=/../screenshots/Nheko/nheko-1.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/Nheko/nheko-2.png alt>
+</p></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://github.com/Nheko-Reborn/nheko target=_blank rel=noopener>https://github.com/Nheko-Reborn/nheko</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>nheko nheko-git (broken)</td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/io.github.NhekoReborn.Nheko target=_blank rel=noopener>https://flathub.org/apps/details/io.github.NhekoReborn.Nheko</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td>nheko</td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td>nheko</td>
+</tr>
+</tbody>
+</table>
+<h2 id=neochat>Neochat <a href=#neochat class=anchor>🔗</a></h2><p>The main Matrix client for Plasma mobile which is incredibly well optimized for Linux phones with great performance, a good UI and a nice featurteset but unfortunately without E2E. They actively work on E2E and also expressed interest in a potential UnifiedPush implementation so they are headed in a really good direction but just not there yet. I will definitely keep a eye on this project and I am very excited to see it develop but in it&rsquo;s current state I can&rsquo;t recommend NeoChat over options like Fluffychat, Hydrogen and even Nheko because I really value encryption.</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=/../screenshots/NeoChat/neochat-1.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/NeoChat/neochat-2.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/NeoChat/neochat-3.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=/../screenshots/NeoChat/neochat-4.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=/../screenshots/NeoChat/neochat-5.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=/../screenshots/NeoChat/neochat-6.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://invent.kde.org/network/neochat target=_blank rel=noopener>https://invent.kde.org/network/neochat</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>neochat-git</td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/org.kde.neochat target=_blank rel=noopener>https://flathub.org/apps/details/org.kde.neochat</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td>neochat</td>
+</tr>
+</tbody>
+</table>
+<h2 id=fractal>Fractal <a href=#fractal class=anchor>🔗</a></h2><p>A Matrix client made with GTK3/Libhandy that could be awesome but lacks E2E and wont ever get it. The project is still maintained but most of the work has shifted to the fractal-next branch which is a full rewrite using the new Matrix Rust SDK and GTK4/Libadwaita so I wouldn&rsquo;t expect any big new features. It also has some issues accessing the Gnome keyring which means you have to unlock it manually before starting Fractal (E.g. with Seahorse). If you are still interested in using the client <a href=https://gamey.tech/posts/fractal-on-the-pinephone/ target=_blank rel=noopener>here</a> is a old article of mine that shows how to do so with Seahorse and Pantalaimon to add E2E support but I would recommend you to wait. With the very promising rewrite on the horizon which will have E2E, even better mobile support, better performance and more it&rsquo;s definitely a project to look out for and who would have guessed, they also plan to implement UnifiedPush.</p>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=/../screenshots/Fractal/fractal-1.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/Fractal/fractal-2.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=/../screenshots/Fractal/fractal-3.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=/../screenshots/Fractal/fractal-4.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type:</th>
+<th>Package:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><a href=https://gitlab.gnome.org/GNOME/fractal target=_blank rel=noopener>https://gitlab.gnome.org/GNOME/fractal</a></td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>fractal (repo) fractal-git</td>
+</tr>
+<tr>
+<td>Flathub</td>
+<td><a href=https://flathub.org/apps/details/org.gnome.Fractal target=_blank rel=noopener>https://flathub.org/apps/details/org.gnome.Fractal</a></td>
+</tr>
+<tr>
+<td>Mobian</td>
+<td></td>
+</tr>
+<tr>
+<td>PostmarketOS</td>
+<td>fractal</td>
+</tr>
+</tbody>
+</table>
+<h2 id=chatty>Chatty <a href=#chatty class=anchor>🔗</a></h2><p>As you may know Phosh&rsquo;s default SMS app Chatty was supposed to ship with Matrix support right from the beginning but they ran into issues with *Libpurple and ultimately decided to ditch it so everything took a lot longer then expected. Luckily they made some serious progress in that direction and even ship a experimental implementation with the app now. It doesn&rsquo;t seem to have device verification yet, currently spams your SMS with all your Matrix rooms and is probably rightfully still hidden behind the experimental setting. There however is E2E support, the interface works really well for 1o1 conversations and probably also private groups and it&rsquo;s right there in your SMS app that runs basically whenever your screen is on which obviously isn&rsquo;t a replacement for push notifications but better then nothing. The development of Matrix support for Chatty has had it&rsquo;s ups and downs and I can&rsquo;t even really guess to when it maight be ready for daily use but they have the hardest parts figured out now so I am optimistic.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>To enable the experimental features of Chatty (Matrix and MMS) you have to use <code>gsettings set sm.puri.Chatty experimental-features true</code>.</li>
+<li>Chatty is preinstalled on any distro using Phosh since it&rsquo;s the default SMS app there and I don&rsquo;t think it makes sense to install it using other DEs so I skipped the package list in this case.</li>
+<li>I disabled experimental features immediately after catching it use over 800MB of ram in the background instead of the usual 25-30 but I didn&rsquo;t do any debugging.</li>
+<li>*Libpurple is a library that aims to support all kinds of chats in a single client (E.g. Matrix, Discord and much much more) but apparently with a lot of flaws, from what I gathered specially in the Documentation and regarding hard coded parts in a few libraries that bind it to the main client Pidgin which definitely shouldn&rsquo;t be a thing.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><p class=markdown-image>
+<img src=/../screenshots/Chatty-Matrix/chatty-1.png alt>
+</p></th>
+<th><p class=markdown-image>
+<img src=/../screenshots/Chatty-Matrix/chatty-2.png alt>
+</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p class=markdown-image>
+<img src=/../screenshots/Chatty-Matrix/chatty-3.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=/../screenshots/Chatty-Matrix/chatty-4.png alt>
+</p></td>
+</tr>
+<tr>
+<td><p class=markdown-image>
+<img src=/../screenshots/Chatty-Matrix/chatty-5.png alt>
+</p></td>
+<td><p class=markdown-image>
+<img src=/../screenshots/Chatty-Matrix/chatty-6.png alt>
+</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id=others>Others <a href=#others class=anchor>🔗</a></h2><p>Just a few clients that didn&rsquo;t make it in the main list for various reasons. There are also a few more ether desktop specific or terminal clients which I didn&rsquo;t bother to mention here because the scope of this article already increased like stupid and I want to publish it at some point but you can find them on <a href=https://matrix.org/discover/ target=_blank rel=noopener>https://matrix.org/discover/</a> .</p>
+<ul>
+<li>
+<p><strong>Kazv:</strong> A WIP client made with Kirigami but I couldn&rsquo;t get it&rsquo;s library (libkazv) to actually build on my Pinephone.</p>
+</li>
+<li>
+<p><strong>Quaternion:</strong> A Desktop client with zero mobile optimizations so while it technically works like any Linux app the UI is unusable.</p>
+</li>
+<li>
+<p><strong>Spectral:</strong> Another Desktop only client, see text about Quaternion.</p>
+</li>
+<li>
+<p><strong>Gomuks:</strong> A terminal based client that I actually used for a little while but terminal apps honetly just aren&rsquo;t great to use on mobile devices.</p>
+</li>
+<li>
+<p><strong>Mirage:</strong> Mirage is a desktop only Matrix client and thanks to it&rsquo;s gesture based interface it was the first client I am aware of that supported proper E2E on Linux phones. I used it for a while and I am thankful for that but it&rsquo;s a awful experience with start up times of literal minutes, A extremely confusing interface, barely functional touchscreen scrolling and more because after all this is clearly a desktop client.</p>
+</li>
+<li>
+<p><strong>Syphon:</strong> I had a very short chat with the dev and I think he will take a look at Fluffychats way of getting the desktop version to work on the Pinephone and possibly try to replicate that.</p>
+</li>
+<li>
+<p><strong>Cinny:</strong> One of the best looking Matrix clients I have ever seen which is currently desktop only but mobile support using PWAs is apparently planned.</p>
+</li>
+</ul>
+<h2 id=more>More <a href=#more class=anchor>🔗</a></h2><p><strong>Mentioned Clients:</strong></p>
+<ul>
+<li>Fluffychat: <a href=https://gitlab.com/famedly/fluffychat target=_blank rel=noopener>https://gitlab.com/famedly/fluffychat</a></li>
+<li>Hydrogen: <a href=https://github.com/vector-im/hydrogen-web/ target=_blank rel=noopener>https://github.com/vector-im/hydrogen-web/</a></li>
+<li>Nheko: <a href=https://github.com/Nheko-Reborn/nheko target=_blank rel=noopener>https://github.com/Nheko-Reborn/nheko</a></li>
+<li>NeoChat: <a href=https://invent.kde.org/network/neochat target=_blank rel=noopener>https://invent.kde.org/network/neochat</a></li>
+<li>Fractal: <a href=https://gitlab.gnome.org/GNOME/fractal target=_blank rel=noopener>https://gitlab.gnome.org/GNOME/fractal</a></li>
+<li>Chatty: <a href=https://source.puri.sm/Librem5/chatty target=_blank rel=noopener>https://source.puri.sm/Librem5/chatty</a></li>
+<li>Kazv: <a href=https://lily.kazv.moe/kazv/kazv target=_blank rel=noopener>https://lily.kazv.moe/kazv/kazv</a></li>
+<li>Quaternion: <a href=https://github.com/quotient-im/Quaternion target=_blank rel=noopener>https://github.com/quotient-im/Quaternion</a></li>
+<li>Spectral: <a href=https://gitlab.com/spectral-im/spectral target=_blank rel=noopener>https://gitlab.com/spectral-im/spectral</a></li>
+<li>Gomuks: <a href=https://github.com/tulir/gomuks target=_blank rel=noopener>https://github.com/tulir/gomuks</a></li>
+<li>Mirage: <a href=https://github.com/mirukana/mirage target=_blank rel=noopener>https://github.com/mirukana/mirage</a></li>
+<li>Syphon: <a href=https://github.com/syphon-org/syphon/ target=_blank rel=noopener>https://github.com/syphon-org/syphon/</a></li>
+<li>Cinny: <a href=https://github.com/ajbura/cinny target=_blank rel=noopener>https://github.com/ajbura/cinny</a></li>
+</ul>
+<p><strong>Other:</strong></p>
+<ul>
+<li>UnifiedPush: <a href=https://unifiedpush.org/ target=_blank rel=noopener>https://unifiedpush.org/</a></li>
+<li>Fractal UnifiedPush: <a href=https://gitlab.gnome.org/GNOME/fractal/-/issues/675 target=_blank rel=noopener>https://gitlab.gnome.org/GNOME/fractal/-/issues/675</a></li>
+<li>Splitting Fractal: <a href=https://blogs.gnome.org/tbernard/2018/05/16/banquets-and-barbecues/ target=_blank rel=noopener>https://blogs.gnome.org/tbernard/2018/05/16/banquets-and-barbecues/</a></li>
+</ul>
+</div>
+<div class=tags>
+<a href=https://gamey.tech/tags/pinephone>Pinephone</a>
+<a href=https://gamey.tech/tags/archlinux>ArchLinux</a>
+<a href=https://gamey.tech/tags/matrix>Matrix</a>
+</div>
+<div id=comment>
+</div>
+</section>
+</main>
+<footer id=footer>
+<div id=social>
+<a class=symbol href=https://fosstodon.org/@gamey rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-mastodon" viewBox="0 0 16 16"><path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339.0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027.0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614.0 01-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804.0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727.0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856.0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74.0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/></svg>
+</a>
+<a class=symbol href=https://twitter.com/gamey404 rel=me target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038.0 9.341-5.003 9.341-9.334.0-.14.0-.282-.006-.422A6.685 6.685.0 0016 3.542a6.658 6.658.0 01-1.889.518 3.301 3.301.0 001.447-1.817 6.533 6.533.0 01-2.087.793A3.286 3.286.0 007.875 6.03 9.325 9.325.0 011.108 2.601a3.289 3.289.0 001.018 4.382A3.323 3.323.0 01.64 6.575v.045a3.288 3.288.0 002.632 3.218 3.203 3.203.0 01-.865.115 3.23 3.23.0 01-.614-.057 3.283 3.283.0 003.067 2.277A6.588 6.588.0 01.78 13.58 6.32 6.32.0 010 13.535 9.344 9.344.0 005.026 15z"/></svg>
+</a>
+</div>
+<div class=copyright>
+Blog by gamey ❤️
+</div>
+</footer>
+</body>
+<script async defer data-domain=gamey.tech src=https://stats.gamey.tech/js/plausible.js></script>
+</html>
