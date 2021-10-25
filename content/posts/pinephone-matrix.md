@@ -41,7 +41,7 @@ While this technically isn't a app it's a very nice web client optimized for low
 
 | ![](/../screenshots/Hydrogen/hydrogen-1.png) | ![](/../screenshots/Hydrogen/hydrogen-2.png) |
 |-------|-------|
-| ![](/../screenshots/Hydrogen/hydrogen-3.png) |  |
+| ![](/../screenshots/Hydrogen/hydrogen-3.png) ||
 
 | Type: | Package: |
 |-------|-------|
@@ -107,10 +107,9 @@ As you may know Phosh's default SMS app Chatty was supposed to ship with Matrix 
 - I disabled experimental features immediately after catching it use over 800MB of ram in the background instead of the usual 25-30 but I didn't do any debugging.
 - *Libpurple is a library that aims to support all kinds of chats in a single client (E.g. Matrix, Discord and much much more) but apparently with a lot of flaws, from what I gathered specially in the Documentation and regarding hard coded parts in a few libraries that bind it to the main client Pidgin which definitely shouldn't be a thing.
 
-| ![](/../screenshots/Chatty-Matrix/chatty-1.png) | ![](/../screenshots/Chatty-Matrix/chatty-2.png) |
-|-------|-------|
-| ![](/../screenshots/Chatty-Matrix/chatty-3.png) | ![](/../screenshots/Chatty-Matrix/chatty-4.png) |
-| ![](/../screenshots/Chatty-Matrix/chatty-5.png) | ![](/../screenshots/Chatty-Matrix/chatty-6.png) |
+| ![](/../screenshots/Chatty-Matrix/chatty-1.png) | ![](/../screenshots/Chatty-Matrix/chatty-2.png) | ![](/../screenshots/Chatty-Matrix/chatty-3.png) |
+|-------|-------|-------|
+| ![](/../screenshots/Chatty-Matrix/chatty-4.png) | ![](/../screenshots/Chatty-Matrix/chatty-5.png) | ![](/../screenshots/Chatty-Matrix/chatty-6.png) |
 
 ## Others
 Just a few clients that didn't make it in the main list for various reasons. There are also a few more ether desktop specific or terminal clients which I didn't bother to mention here because the scope of this article already increased like stupid and I want to publish it at some point but you can find them on https://matrix.org/discover/ .
